@@ -76,7 +76,7 @@ html,body{margin:0;background:#f6f9fa}
 </div>
 <div class="cvp-main" data-n="main"></div>
 </div>
-<script src="data.js"></script>
+<script>/* always load the latest offers, never a cached copy */document.write('<script src="data.js?v='+Date.now()+'"><\/script>')</script>
 <script>
 (function(){
 var R=document.getElementById('cvp');
