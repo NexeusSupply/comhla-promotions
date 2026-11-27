@@ -1,0 +1,12 @@
+<!-- Comhla Vet promotions. Paste this into a Rocketspark Code block. The page itself lives on GitHub. -->
+<iframe id="cvp-frame" src="https://nexeussupply.github.io/comhla-promotions/" title="Comhla Vet promotions" style="width:100%;height:2400px;border:0;display:block" loading="lazy"></iframe>
+<script>
+(function(){
+  var f=document.getElementById('cvp-frame');
+  window.addEventListener('message',function(e){
+    if(e.origin!=='https://nexeussupply.github.io'||!e.data)return;
+    if(e.data.cvpHeight)f.style.height=(e.data.cvpHeight+4)+'px';
+    if(e.data.cvpScrollTo!=null){var y=f.getBoundingClientRect().top+window.scrollY+e.data.cvpScrollTo-160;window.scrollTo({top:y,behavior:'smooth'})}
+  });
+})();
+</script>
