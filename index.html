@@ -98,7 +98,7 @@ var SECS=[['ALL','Everything'],['ca','Companion'],['mp','Masterpet'],['pa','Prod
 $('secs').innerHTML=SECS.map(function(s){return '<button type="button" class="chip'+(s[0]=='ALL'?' on':'')+'" data-s="'+s[0]+'">'+s[1]+'</button>'}).join(' ');
 function card(o){
   var all=o.clinics.length===D.codes.length, fine=o.fine||'';
-  var links=o.links.length?o.links.map(function(l){if(l[0].charAt(0)=='#')return '<span class="lgh">'+esc(l[0].slice(1))+'</span>';var u=url(l[1]);return u?'<a href="'+esc(u)+'" target="_blank" rel="noopener" data-gap="'+esc(l[0])+': '+esc(l[2]||'file coming soon')+'">'+esc(l[0])+' ↓</a>':'<span class="gap">'+esc(l[0])+': '+esc(l[2]||'file coming soon')+'</span>'}).join(''):'<span class="none">No files needed</span>';
+  var links=o.links.length?o.links.map(function(l){if(l[0].charAt(0)=='#')return '<span class="lgh">'+esc(l[0].slice(1))+'</span>';var u=url(l[1]);return u?'<a href="'+esc(u)+'" target="_blank" rel="noopener" data-gap="'+esc(l[0])+': '+esc(l[2]||'file coming soon')+'">'+esc(l[0])+(/^https/.test(u)?' ↗':' ↓')+'</a>':'<span class="gap">'+esc(l[0])+': '+esc(l[2]||'file coming soon')+'</span>'}).join(''):'<span class="none">No files needed</span>';
   var due=o.due?'<div class="due">Buy in by '+dt(o.due)+'</div>':'';
   var br=o.brands?'<div class="k">Qualifying copper bullets</div><table class="br">'+o.brands.map(function(b){return '<tr><td>'+esc(b[0])+'</td><td>'+esc(b[1])+'</td></tr>'}).join('')+'</table>':'';
   return '<article class="card '+(o.own=='comhla'?'ours':'sup')+(isNew(o)?' new':'')+'" id="cvp_'+o.id+'" data-o="'+o.own+'" data-c="'+o.clinics.join(' ')+'" data-t="'+esc((o.name+' '+o.sup+' '+o.gets+' '+o.todo.join(' ')+' '+fine).toLowerCase())+'">'
