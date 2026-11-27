@@ -13,13 +13,43 @@ var FILES={
   "bh-wd-vcm":        "files/BlackHawk-WorkingDog-VCM.pdf",  // VCM_Black_Hawk_working_dog_retail_offer_NovDec26.pdf
   "vax-vetsouth":     "files/CA-Vax-Collateral-VetSouth.zip",  // CA Vax Campaign/VetSouth folder (zip it first)
   "vax-wcv":          "files/CA-Vax-Collateral-WCV.zip",  // CA Vax Campaign/WCV folder (zip it first)
-  "campy-poster":     "files/CampyVax-Poster-A3.pdf",  // CampyVax-Poster-A3.pdf
-  "campy-prize":      "files/CampyVax-Prize-Poster-A3.pdf",  // CampyVax-Prize-Poster-A3.pdf
-  "campy-paddock":    "files/CampyVax-Paddock-Poster-A3.pdf",  // CampyVax-Paddock-Poster-A3.pdf
-  "campy-paddock-dig":"files/CampyVax-Paddock-Poster-Digital.png",  // PO-CampyVax-Paddock-Poster-Digital.png
-  "campy-entry":      "files/CampyVax-Entry-Form-A4.pdf",  // CampyVax-Prize-Entry-Form-A4-self-print.pdf
+  // CampyVax: one set per clinic brand (from Marketing team > 02 Campaigns > PA > CampyVax 2026)
+  "campy-vetlife-online":  "https://form.jotform.com/263257526228057?q2_dropdown0=Vetlife",
+  "campy-vetlife-poster":  "files/CampyVax-Vetlife-Poster-A3.pdf",
+  "campy-vetlife-prize":   "files/CampyVax-Vetlife-Prize-Poster-A3.pdf",
+  "campy-vetlife-paddock": "files/CampyVax-Vetlife-Paddock-Poster-A3.pdf",
+  "campy-vetlife-paddock-dig": "files/CampyVax-Vetlife-Paddock-Poster-Digital.png",
+  "campy-vetlife-entry":   "files/CampyVax-Vetlife-Entry-Form-A4.pdf",
+  "campy-vetsouth-online":  "https://form.jotform.com/263257526228057?q2_dropdown0=VetSouth",
+  "campy-vetsouth-poster":  "files/CampyVax-VetSouth-Poster-A3.pdf",
+  "campy-vetsouth-prize":   "files/CampyVax-VetSouth-Prize-Poster-A3.pdf",
+  "campy-vetsouth-paddock": "files/CampyVax-VetSouth-Paddock-Poster-A3.pdf",
+  "campy-vetsouth-paddock-dig": "files/CampyVax-VetSouth-Paddock-Poster-Digital.png",
+  "campy-vetsouth-entry":   "files/CampyVax-VetSouth-Entry-Form-A4.pdf",
+  "campy-totallyvets-online":  "https://form.jotform.com/263257526228057?q2_dropdown0=Totally%20Vets",
+  "campy-totallyvets-poster":  "files/CampyVax-TotallyVets-Poster-A3.pdf",
+  "campy-totallyvets-prize":   "files/CampyVax-TotallyVets-Prize-Poster-A3.pdf",
+  "campy-totallyvets-paddock": "files/CampyVax-TotallyVets-Paddock-Poster-A3.pdf",
+  "campy-totallyvets-paddock-dig": "files/CampyVax-TotallyVets-Paddock-Poster-Digital.png",
+  "campy-totallyvets-entry":   "files/CampyVax-TotallyVets-Entry-Form-A4.pdf",
+  "campy-vetsone-online":  "https://form.jotform.com/263257526228057?q2_dropdown0=VetsOne",
+  "campy-vetsone-poster":  "files/CampyVax-VetsOne-Poster-A3.pdf",
+  "campy-vetsone-prize":   "files/CampyVax-VetsOne-Prize-Poster-A3.pdf",
+  "campy-vetsone-paddock": "files/CampyVax-VetsOne-Paddock-Poster-A3.pdf",
+  "campy-vetsone-paddock-dig": "files/CampyVax-VetsOne-Paddock-Poster-Digital.png",
+  "campy-vetsone-entry":   "files/CampyVax-VetsOne-Entry-Form-A4.pdf",
+  "campy-tararua-online":  "https://form.jotform.com/263257526228057?q2_dropdown0=Tararua%20Vets",
+  "campy-tararua-poster":  "files/CampyVax-Tararua-Poster-A3.pdf",
+  "campy-tararua-prize":   "files/CampyVax-Tararua-Prize-Poster-A3.pdf",
+  "campy-tararua-paddock": "files/CampyVax-Tararua-Paddock-Poster-A3.pdf",
+  "campy-tararua-paddock-dig": "files/CampyVax-Tararua-Paddock-Poster-Digital.png",
+  "campy-tararua-entry":   "files/CampyVax-Tararua-Entry-Form-A4.pdf",
+  "campy-levin-online":  "https://form.jotform.com/263257526228057?q2_dropdown0=Levin%20%26%20Horowhenua%20Vets",
+  "campy-levin-poster":  "files/CampyVax-Levin-Poster-A3.pdf",
+  "campy-levin-prize":   "files/CampyVax-Levin-Prize-Poster-A3.pdf",
+  "campy-levin-paddock": "files/CampyVax-Levin-Paddock-Poster-A3.pdf",
+  "campy-levin-entry":   "files/CampyVax-Levin-Entry-Form-A4.pdf",
   "campy-tc":         "https://www.comhlavet.com/campyTC/",  // CampyVax T&Cs page
-  "campy-survey":     "",  // online survey link, when there is one
   "campy-order":      "",  // order form, when finished
   "selekt-readme":    "files/SELEKT-Summer-Read-Me-First.pdf",  // SELEKT-Summer-clinic-pack-READ-ME-FIRST.pdf
   "selekt-brief":     "files/SELEKT-Summer-Staff-Brief.pdf",  // SELEKT-Summer-staff-brief-A4.pdf
@@ -56,7 +86,7 @@ offers:[
 {id:"bh2520",sec:"mp",name:"Black Hawk dog 15kg and 20kg",sup:"Masterpet",start:"2026-11-01",end:"2026-12-31",tile:"$25 off",gets:"Save $25 on Black Hawk 15kg and 20kg dog food.",due:"2026-12-04",todo:["Buy in by 4 December through your Masterpet Territory Manager.","Clinic gets 10% off invoice.","Minimum 8 assorted bags, including puppy."],clinics:ALL,links:[],own:"supplier"},
 {id:"bhhb",sec:"mp",name:"Black Hawk Healthy Benefits 10kg and 12kg",sup:"Masterpet",start:"2026-11-01",end:"2026-12-31",tile:"20% off",gets:"20% off Black Hawk Healthy Benefits 10kg and 12kg bags.",due:"2026-12-04",todo:["Buy in by 4 December through your Masterpet Territory Manager.","Clinic gets 18% off invoice.","Minimum 12 assorted bags."],clinics:ALL,links:[],own:"supplier"},
 {id:"bhcat",sec:"mp",name:"Black Hawk cat and kitten 4kg+",sup:"Masterpet",start:"2026-11-01",end:"2026-12-31",tile:"$15+ off",gets:"At least $15 off Black Hawk cat and kitten bags of 4kg or larger.",due:"2026-12-04",todo:["Buy in by 4 December through your Masterpet Territory Manager.","Minimum 12 assorted bags, including kitten."],clinics:ALL,links:[],own:"supplier"},
-{id:"campy",sec:"pa_new",name:"CampyVax farmer engagement",sup:"Comhla Vet and MSD",start:"2026-12-01",end:"2027-03-31",tile:"Win a BBQ",gets:"Farmers who complete a short survey on their vaccination practices and the third Campylobacter shot go in the draw to win one of three COBB Gas Deluxe BBQ packages ($479 each).",todo:["Survey forms online and on paper.","Put up the clinic display; social posts and farmer comms support it."],clinics:PA,links:[["Poster A3","campy-poster"],["Prize poster A3","campy-prize"],["Paddock poster A3","campy-paddock"],["Paddock poster (digital)","campy-paddock-dig"],["Paper entry form","campy-entry"],["Terms and conditions","campy-tc"],["Online survey","campy-survey","link to come"],["Order form","campy-order","still being finished"]],own:"comhla"},
+{id:"campy",sec:"pa_new",name:"CampyVax farmer engagement",sup:"Comhla Vet and MSD",start:"2026-12-01",end:"2027-03-31",tile:"Win a BBQ",gets:"Farmers who complete a short survey on their vaccination practices and the third Campylobacter shot go in the draw to win one of three COBB Gas Deluxe BBQ packages ($479 each).",todo:["Survey forms online and on paper.","Put up the clinic display; social posts and farmer comms support it."],clinics:PA,links:[["Terms and conditions","campy-tc"],["Order form","campy-order","still being finished"],["#Vetlife"],["Online entry form","campy-vetlife-online"],["Poster A3","campy-vetlife-poster"],["Prize poster A3","campy-vetlife-prize"],["Paddock poster A3","campy-vetlife-paddock"],["Paddock poster (digital)","campy-vetlife-paddock-dig"],["Paper entry form","campy-vetlife-entry"],["#VetSouth"],["Online entry form","campy-vetsouth-online"],["Poster A3","campy-vetsouth-poster"],["Prize poster A3","campy-vetsouth-prize"],["Paddock poster A3","campy-vetsouth-paddock"],["Paddock poster (digital)","campy-vetsouth-paddock-dig"],["Paper entry form","campy-vetsouth-entry"],["#Totally Vets"],["Online entry form","campy-totallyvets-online"],["Poster A3","campy-totallyvets-poster"],["Prize poster A3","campy-totallyvets-prize"],["Paddock poster A3","campy-totallyvets-paddock"],["Paddock poster (digital)","campy-totallyvets-paddock-dig"],["Paper entry form","campy-totallyvets-entry"],["#VetsOne"],["Online entry form","campy-vetsone-online"],["Poster A3","campy-vetsone-poster"],["Prize poster A3","campy-vetsone-prize"],["Paddock poster A3","campy-vetsone-paddock"],["Paddock poster (digital)","campy-vetsone-paddock-dig"],["Paper entry form","campy-vetsone-entry"],["#Tararua Vets"],["Online entry form","campy-tararua-online"],["Poster A3","campy-tararua-poster"],["Prize poster A3","campy-tararua-prize"],["Paddock poster A3","campy-tararua-paddock"],["Paddock poster (digital)","campy-tararua-paddock-dig"],["Paper entry form","campy-tararua-entry"],["#Levin & Horowhenua Vets"],["Online entry form","campy-levin-online"],["Poster A3","campy-levin-poster"],["Prize poster A3","campy-levin-prize"],["Paddock poster A3","campy-levin-paddock"],["Paper entry form","campy-levin-entry"]],own:"comhla"},
 {id:"selekt",sec:"pa_new",name:"SELEKT Summer Kit",sup:"Agilis",start:"2026-12-01",end:"2027-02-15",tile:"Win a chilly bin",gets:"Be in to win a 56L ICEY-TEK chilly bin full of summer gear (about $500). Free entry by QR code, no purchase needed.",todo:["Clinic buy-in: buy 7 kits, get 1 free. Order through Fortis.","Buy-in offer ends 31 January 2027."],fine:"Kit: pump and drencher combo with whisk and bucket, 8 x SELEKT Restore, 2 x SELEKT Glycerol Plus.",clinics:PA,links:[["Read me first","selekt-readme"],["Staff brief","selekt-brief"],["Counter tent card","selekt-tent"],["Chilly bin poster","selekt-poster"]],own:"comhla"},
 {id:"cobalt",sec:"pa_on",name:"Cobaltsure",sup:"Agilis",start:"2026-11-01",end:"2026-12-31",tile:"Reduced price",gets:"Reduced price on Cobaltsure B12 ($87.35 + GST) and Cobaltsure B12 + Se ($91.63 + GST).",todo:[],clinics:["VLL","VSL","TVL","WCV","SRV","VCM","StRV","CHB","BVL"],links:[["Poster: VetSouth","cobalt-vetsouth"],["Poster: WCV","cobalt-wcv"]],own:"comhla"},
 {id:"copper",sec:"pa_on",name:"Copper calf care bundle",sup:"Comhla Vet",start:"2026-11-01",end:"2026-12-31",tile:"20% off Eclipse",gets:"Buy three packs of qualifying 10g or 20g copper bullets, get 20% off one eligible Eclipse product, plus a free composite FEC.",todo:["Invoice each product separately. Apply the 20% manually to the Eclipse product; copper stays at normal price.","Record the free FEC against the qualifying sale. Physical vouchers optional."],fine:"Eligible Eclipse: E Injection, E Injection with B12 + Se, Pour-On 2.5L, Pour-On 5.5L. Packs can be 10g, 20g or a mix. Free FEC: use by 28 February 2027, composite samples tested together on the in-clinic Parasight machine, one per client account, no larval culture.",brands:[["Vetlife","Copacaps"],["VetSouth","Copasure Capsules or Coppermax"],["West Coast Vets","Copacaps"],["Morrinsville","Coppermax"],["Totally Vets","Copacaps or Coppersure Capsules"],["SRV","Copacaps"]],clinics:["VLL","VSL","TVL","WCV","SRV","VCM"],links:[["Poster: VetSouth","calf-vetsouth"],["Poster: WCV","calf-wcv"],["FEC voucher: VetSouth (Word)","fec-voucher-vetsouth"],["Posters for VLL, TVL, SRV, VCM",null,"not made yet"]],own:"comhla"},

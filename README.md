@@ -23,6 +23,7 @@ then click **Commit changes**.
 2. Open the `files` folder on GitHub, click **Add file > Upload files**, drop it in, commit.
 3. Make sure the matching line in `FILES` in `data.js` says `"files/Cobaltsure-WCV.pdf"`.
 
+A heading line inside a card's links can be added with `["#Heading"]`.
 A button whose file isn't uploaded yet shows as a yellow "coming soon" note, never a broken link.
 Max 25MB per file when uploading through the browser.
 
@@ -36,11 +37,7 @@ Max 25MB per file when uploading through the browser.
 | bh-wd-vcm | BlackHawk-WorkingDog-VCM.pdf |
 | vax-vetsouth | CA-Vax-Collateral-VetSouth.zip |
 | vax-wcv | CA-Vax-Collateral-WCV.zip |
-| campy-poster | CampyVax-Poster-A3.pdf |
-| campy-prize | CampyVax-Prize-Poster-A3.pdf |
-| campy-paddock | CampyVax-Paddock-Poster-A3.pdf |
-| campy-paddock-dig | CampyVax-Paddock-Poster-Digital.png |
-| campy-entry | CampyVax-Entry-Form-A4.pdf |
+| campy-<brand>-… | CampyVax-<Brand>-Poster-A3.pdf, -Prize-Poster-A3.pdf, -Paddock-Poster-A3.pdf, -Paddock-Poster-Digital.png, -Entry-Form-A4.pdf (brands: Vetlife, VetSouth, TotallyVets, VetsOne, Tararua, Levin) |
 | selekt-readme | SELEKT-Summer-Read-Me-First.pdf |
 | selekt-brief | SELEKT-Summer-Staff-Brief.pdf |
 | selekt-tent | SELEKT-Summer-Tent-Card.pdf |
@@ -52,7 +49,7 @@ Max 25MB per file when uploading through the browser.
 | fec-voucher-vetsouth | FEC-Voucher-VetSouth.docx |
 
 Still to come: Delicate Care poster, Calmex and Cyrex buy-in forms, Royal Canin FAQ,
-CampyVax online survey link and order form.
+CampyVax order form.
 
 ## Giving someone edit access
 
